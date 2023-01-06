@@ -68,6 +68,7 @@ p{
 .btn:hover{
     background: #563434;
 }
+
 .header{
     background: radial-gradient(#fff, #ffd6d6);
 }
@@ -82,6 +83,7 @@ p{
     min-width: 250px;
     margin-bottom: 30px;
 }
+
 .col-3 img{
     width: 100%;
 }
@@ -108,7 +110,7 @@ p{
     line-height: 60px;
     color: #555;
 }
-.title:after{
+.title::after{
     content: '';
     background: #ff523b;
     width: 80px;
@@ -257,7 +259,6 @@ ul{
 }
 
 /* -------- media query for menu -------- */
-
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
@@ -298,6 +299,7 @@ select:focus{
 .page-btn{
     margin: 0 auto 80px;
 }
+
 .page-btn span{
     display: inline-block;
     border: 1px solid #ff523b;
@@ -322,32 +324,34 @@ select:focus{
     color: #fff;
 }
 
-/* ------ single product details ------ */
+/* ------ SINGLE PRODUCT DETAILS ------ */
+
 .single-product{
-    margin-top: 80px;
+    margin-top: 50px;   /* orig 80px */
 }
 
 .single-product .col-2 img{
     padding: 0;
 }
 .single-product .col-2{
-    padding: 20px;
+    padding: 10px;   /* orig 20px */
 }
 .single-product h4{
-    margin: 20px 0;
-    font-size: 22px;
+    margin: 10px 0;  /* orig 20px 0 */
+    font-size: 22px;     /* orig 22px */
     font-weight: bold;
 }
 .single-product select{
-    display: block;
-    padding: 10px;
-    margin-top: 20px;
+    /* display: block; */
+    padding: 8px;   /* orig 10px */
+    margin-top: 0px;   /* orig 20px */
+    margin-right: 20px;
 }
 .single-product input{
     width: 50px;
-    height: 40px;
-    padding: 10px;
-    font-size: 20px;
+    height: 35px;   /* orig 40px */
+    padding: 8px;  /* orig 10px */
+    font-size: 15px;    /* orig 20px */
     margin-right: 10px;
     border: 1px solid #ff523b;
 }
@@ -370,10 +374,140 @@ input:focus{
     cursor: pointer;
 }
 
+/*------------------------------------ CART ITEMS DETAILS   ------------------------------------ */
+.cart-page{
+    margin:  80px auto;
+
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a{
+    color:  #ff523b;
+    font-size: 12px;
+}
+
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+
+}
+/*------------------------------------ ACCOUNT PAGE     ------------------------------------ */
+.account-page{
+    padding: 50px 0;
+    background-color: radial-gradient(#ffd6d0,#ffd6d6);
+}
+.form-container{
+    background:  #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding:  0 10px;
+    cursor: #555;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 0.5s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegisterForm{
+    left: 0;
+}
+form{
+    font-size: 12px;
+
+}
+
+#Indicator{
+    width: 100px;
+    border: none;
+    background: #ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 0.5s;
+
+}
+
+
+
+
 
 
 /* ---- media query for less than 600 screen size ---- */
-
 @media only screen and (max-width: 600px){
         .row{
             text-align: center;
@@ -385,11 +519,15 @@ input:focus{
             text-align: left;
         }
         .single-product .col-2{
-            padding: 20px 0;
+            padding: 20px 0;    /* 20px 0*/
         }
         .single-product h1{
             font-size: 26px;
             line-height: 32px;
+        }
+        .cart-info p{
+            display:  none;
+
         }
 
 }
