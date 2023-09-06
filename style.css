@@ -88,7 +88,7 @@ p{
     width: 100%;
 }
 .small-container{
-    max-width: 1080px;
+    max-width: 67.5em;             /* 1080px is equal to 67.5em */ 
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -97,15 +97,15 @@ p{
     flex-basis: 25%;
     padding: 10px;
     min-width: 200px;
-    margin-bottom: 50px;
-    transition: transform 0.5s;
+    margin-bottom: 3.125rem;        /* 50px*/
+    transition: transform 0.3s;    /* combination w/ [.col-4:hover]  */
 }
 .col-4 img{
     width: 100%;
 }
 .title{
     text-align: center;
-    margin: auto 80px;
+    margin: 0 auto 80px;
     position: relative;
     line-height: 60px;
     color: #555;
@@ -133,10 +133,10 @@ h4{
 }
 
 .col-4:hover{
-    transform: translateY(-5px);
+    transform: translateY(-20px);   /* move up the picture Y-axis */
 }
 
-/* --- offer --- */
+/* --- OFFER --- */
 .offer{
     background: radial-gradient(#ffd6d0,#ffd6d6);
     margin-top: 80px;
@@ -151,7 +151,7 @@ small{
     color: #555;
 }
 
-/* ---------- testimonial ---------- */
+/* -- TESTIMONIAL -- */
 .testimonial{
     padding-top: 100px;
 }
@@ -185,7 +185,7 @@ small{
     font-size: 16px;
 }
 
-/* ---------- Brands ---------- */
+/* --BRANDS -- */
 .brands{
     margin: 100px auto;
 }
@@ -201,7 +201,7 @@ small{
     filter: grayscale(0);
 }
 
-/* -------- footer -------- */
+/* --  FOOTER  -- */
 .footer{
     background: #000;
     color:  #8a8a8a;
@@ -258,7 +258,7 @@ ul{
     display: none;
 }
 
-/* -------- media query for menu -------- */
+/* -- MEDIA QUERY FOR MENU -- */
 @media only screen and (max-width: 800px){
     nav ul{
         position: absolute;
@@ -283,7 +283,7 @@ ul{
         cursor: pointer;
     }
 }
-/* -------- all products page -------- */
+/* -- ALL PRODUCTS PAGES -- */
 .row-2{
     justify-content: space-between;
     margin: 100px auto 50px;
@@ -324,34 +324,33 @@ select:focus{
     color: #fff;
 }
 
-/* ------ SINGLE PRODUCT DETAILS ------ */
-
+/* -- SINGLE PRODUCT DETAILS -- */
 .single-product{
-    margin-top: 50px;   /* orig 80px */
+    margin-top: 50px;       /*  80px */
 }
 
 .single-product .col-2 img{
     padding: 0;
 }
 .single-product .col-2{
-    padding: 10px;   /* orig 20px */
+    padding: 10px;          /*  20px */
 }
 .single-product h4{
-    margin: 10px 0;  /* orig 20px 0 */
-    font-size: 22px;     /* orig 22px */
+    margin: 10px 0;         /*  20px 0 */
+    font-size: 22px;        /*  22px */
     font-weight: bold;
 }
 .single-product select{
     /* display: block; */
-    padding: 8px;   /* orig 10px */
-    margin-top: 0px;   /* orig 20px */
+    padding: 8px;       /*  10px */
+    margin-top: 0px;   /*  20px */
     margin-right: 20px;
 }
 .single-product input{
     width: 50px;
-    height: 35px;   /* orig 40px */
-    padding: 8px;  /* orig 10px */
-    font-size: 15px;    /* orig 20px */
+    height: 35px;       /*  40px */
+    padding: 8px;       /*  10px */
+    font-size: 15px;    /*  20px */
     margin-right: 10px;
     border: 1px solid #ff523b;
 }
@@ -374,7 +373,7 @@ input:focus{
     cursor: pointer;
 }
 
-/*------------------------------------ CART ITEMS DETAILS   ------------------------------------ */
+/*---  CART ITEMS DETAILS  --- */
 .cart-page{
     margin:  80px auto;
 
@@ -431,7 +430,7 @@ td:last-child{
     text-align: right;
 
 }
-/*------------------------------------ ACCOUNT PAGE     ------------------------------------ */
+/*-- ACCOUNT PAGE -- */
 .account-page{
     padding: 50px 0;
     background-color: radial-gradient(#ffd6d0,#ffd6d6);
@@ -502,32 +501,26 @@ form{
 
 }
 
-
-
-
-
-
-/* ---- media query for less than 600 screen size ---- */
+/* ---- MEDIA QUERY FOR LESS THAN 600 screen size ---- */
 @media only screen and (max-width: 600px){
         .row{
             text-align: center;
         }
-        .col-2, .col-3, .col-4{
-            flex-basis: 100%;
-        }
-        .single-product .row{
-            text-align: left;
-        }
-        .single-product .col-2{
-            padding: 20px 0;    /* 20px 0*/
-        }
-        .single-product h1{
-            font-size: 26px;
-            line-height: 32px;
-        }
-        .cart-info p{
-            display:  none;
+            .col-2, .col-3, .col-4{
+                flex-basis: 100%;
+            }
+                .single-product .row{
+                    text-align: left;
+                }
+                    .single-product .col-2{
+                        padding: 20px 0;    /* 20px 0*/
+                    }
+                        .single-product h1{
+                            font-size: 26px;
+                            line-height: 32px;
+                        }
+                            .cart-info p{
+                                display:  none;
 
-        }
-
+                            }
 }

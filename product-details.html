@@ -32,7 +32,7 @@
             </div>
         </div>    
 
-        <!-- -------- SINGLE PRODUCT DETAILS -------- -->
+        <!--  SINGLE PRODUCT DETAILS  -->
         <div class="small-container single-product">
            
             <div class="row">
@@ -64,7 +64,7 @@
                 <p>Home / T-Shirt</p>
                 <h1>Red Printed T-Shirt by HRX</h1>
                 <h4>$50.00</h4>
-                            <select>
+                            <select title="sizes">
                                 <option>Select Size</option>
                                 <option>XXL</option>
                                 <option>XL</option>
@@ -72,7 +72,7 @@
                                 <option>Medium</option>
                                 <option>Small</option>
                             </select>
-                    <input type="number" value="1">
+                    <input type="number" value="1" placeholder="number">
                     <a href="" class="btn">Add To Cart</a>
 
                     <h3>Product Details <i class="fa fa-indent"></i></h3>   <br>
@@ -81,7 +81,7 @@
         </div>
         </div>
 
-<!-- -------- TITLE -------- -->
+        <!--  TITLE  -->
         <div class="small-container">
             <div class="row row-2">
                 <h2>Related Products</h2>
@@ -89,7 +89,7 @@
             </div>
         </div>
 
-<!-- -------- PRODUCT -------- -->
+        <!--  PRODUCT  -->
             <div class="small-container">
                 <div class="row">
                     <div class="col-4">
@@ -104,7 +104,7 @@
                         </div>
                         <p>$50.00</p>
                     </div>
-<!-- --------------------------------------------------------------------------------- -->
+
                     <div class="col-4"><img src="./images/product-10.jpg" alt="Product-10">
                         <h4>Black Shoes</h4>
                         <div class="rating">
@@ -116,7 +116,7 @@
                         </div>
                         <p>$50.00</p>
                     </div>
-<!-- --------------------------------------------------------------------------------- -->
+
                     <div class="col-4"><img src="./images/product-11.jpg" alt="Product-11">
                         <h4>Gray Shoes</h4>
                         <div class="rating">
@@ -128,7 +128,7 @@
                         </div>
                         <p>$50.00</p>
                     </div>
-<!-- --------------------------------------------------------------------------------- -->
+
                     <div class="col-4"><img src="./images/product-12.jpg" alt="Product-12">
                         <h4>Jogging Pants</h4>
                         <div class="rating">
@@ -144,7 +144,7 @@
                 </div>    
             </div>
 
-<!----------------------FOOTER---------------------------------------------------------------------------------- -->
+            <!-- FOOTER -->
             <div class="footer">
                 <div class="container">
                     <div class="row">
@@ -185,50 +185,37 @@
                     <p class="copyright">Copyright 2022 - Easy Tutorials</p>
                 </div>
             </div>
-
-<!-- -------- js fo TOGGLE MENU -------- -->
+            <!--  js FOR TOGGLE MENU -->
             <script>
                 var MenuItems =  document.getElementById("MenuItems");
                 MenuItems.style.maxHeight = "0px";
                 function menutoggle(){
                     if(MenuItems.style.maxHeight == "0px"){
-
                         MenuItems.style.maxHeight = "200px"
-                    }else{
-
-                        MenuItems.style.maxHeight = "0px";
-                    }
+                        }else{
+                            MenuItems.style.maxHeight = "0px";
+                        }
                 }
             </script>
 
-
-<!-- -------- js for PRODUCT GALLERY -------- -->
+        <!--  js FOR PRODUCT GALLERY  -->
         <script>
             var ProductImg = document.getElementById("ProductImg");
                 var SmallImg = document.getElementsByClassName("small-img");
 
                     SmallImg[0].onclick = function(){
-
                         ProductImg.src = SmallImg[0].src;
                     }
-
-                    SmallImg[1].onclick = function(){
-
-                        ProductImg.src = SmallImg[1].src;
-                    }
-                    SmallImg[2].onclick = function(){
-
-                        ProductImg.src = SmallImg[2].src;
-                    }
-                    SmallImg[3].onclick = function(){
-                        
-                        ProductImg.src = SmallImg[3].src;
-                    }
-
+                        SmallImg[1].onclick = function(){
+                            ProductImg.src = SmallImg[1].src;
+                        }
+                            SmallImg[2].onclick = function(){
+                                ProductImg.src = SmallImg[2].src;
+                            }
+                                SmallImg[3].onclick = function(){
+                                    ProductImg.src = SmallImg[3].src;
+                                }
         </script>
 
     </body>
 </html>
-
-Part 3 E-commerce Website Design In HTML & CSS | Create eCommerce Site Product Details Page
-<!-- https://www.youtube.com/watch?v=yQimoqo0-7g&t=2400s -->

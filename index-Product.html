@@ -30,12 +30,11 @@
             <img src="./images/menu.png" class="menu-icon" onclick="menutoggle()" alt="Menu"> 
         </div>
     </div>    
-   
-<!------ All PRODUCTS ------>
+    <!-- ALL PRODUCTS -->
     <div class="small-container">
             <div class="row row-2">
                 <h2>All Products</h2>
-                <select>
+                <select title="Dropdown" >
                     <option>Default Sorting</option>
                     <option>Sort by price</option>
                     <option>Sort by popularity</option>
@@ -43,8 +42,6 @@
                     <option>Sort by sale</option>
                 </select>
             </div>
-
-
         <div class="row">
             <div class="col-4">
                 <a href="product-details.html"><img src="./images/product-1.jpg" alt="Product-1"></a>
@@ -58,7 +55,6 @@
                 </div>
                 <p>$50.00</p>
             </div>
-
             <div class="col-4"><img src="./images/product-2.jpg" alt="Product-2">
                 <h4>HRX Black Shoes</h4>
                 <div class="rating">
@@ -93,8 +89,7 @@
                 <p>$50.00</p>
             </div>
         </div>  
-        
-<!----------------------- Latest products ---------------------------------------->
+        <!-- LATEST PRODUCTS -->
         <h2 class="title">Latest Products</h2> 
         <div class="row">
             <div class="col-4"><img src="./images/product-5.jpg" alt="Product-5">
@@ -108,7 +103,6 @@
                 </div>
                 <p>$50.00</p>
             </div>
-
             <div class="col-4"><img src="./images/product-6.jpg" alt="Product-6">
                 <h4>Black JaguarT-shirt</h4>
                 <div class="rating">
@@ -120,7 +114,6 @@
                 </div>
                 <p>$50.00</p>
             </div>
-
             <div class="col-4"><img src="./images/product-7.jpg" alt="Product-7">
                 <h4>Random Socks</h4>
                 <div class="rating">
@@ -132,7 +125,6 @@
                 </div>
                 <p>$50.00</p>
             </div>
-
             <div class="col-4"><img src="./images/product-8.jpg" alt="Product-8">
                 <h4>Possil Black Watch</h4>
                 <div class="rating">
@@ -145,7 +137,6 @@
                 <p>$50.00</p>
             </div>
         </div>
-
         <div class="row">
             <div class="col-4"><img src="./images/product-9.jpg" alt="Product-9">
                 <h4>Rolex Watch</h4>
@@ -158,7 +149,6 @@
                 </div>
                 <p>$50.00</p>
             </div>
-
             <div class="col-4"><img src="./images/product-10.jpg" alt="Product-10">
                 <h4>Black Shoes</h4>
                 <div class="rating">
@@ -170,7 +160,6 @@
                 </div>
                 <p>$50.00</p>
             </div>
-
             <div class="col-4"><img src="./images/product-11.jpg" alt="Product-11">
                 <h4>Gray Shoes</h4>
                 <div class="rating">
@@ -194,7 +183,6 @@
                 <p>$50.00</p>
             </div>
         </div>    
-
         <div class="page-btn">
             <span>1</span>
             <span>2</span>
@@ -203,8 +191,7 @@
             <span>&#8594;</span>
         </div>
     </div>
-
-<!-- -------- footer -------- -->
+    <!-- FOOTER -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -215,7 +202,6 @@
                         <img src="./images/play-store.png" alt="PlayStore">
                         <img src="./images/app-store.png" alt="App-Store">
                     </div>
-
                 </div>
                 <div class="footer-col-2">
                     <a href="index.html"><img src="./images/logo-white.png" alt="Logo-white"></a>
@@ -244,22 +230,19 @@
             <p class="copyright">Copyright 2022 - Easy Tutorials</p>
         </div>
     </div>
-
-    <!-- -------- js fo toggle menu -------- -->
+    <!--  js FOR TOGGLE MENU -->
     <script>
         var MenuItems =  document.getElementById("MenuItems");
         MenuItems.style.maxHeight = "0px";
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "0px"){
-                MenuItems.style.maxHeight = "200px"
+            function menutoggle(){
+                if(MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight = "200px"
+                }
+                else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
             }
-            else
-            {
-                MenuItems.style.maxHeight = "0px";
-            }
-        }
     </script>
-
-
 </body>
 </html>
